@@ -1,289 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>New Calvary Baptist Church</title>
-                
-                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-                    
-                    <style>
-                    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter', sans-serif;}
-                    body{background:#0f0f0f;color:#fff;}
-                    
-                    header{
-                    position:fixed;width:100%;top:0;
-                    background:rgba(0,0,0,0.85);
-                    backdrop-filter:blur(10px);
-                    z-index:1000;
-                    }
-                    
-                    nav{
-                    display:flex;justify-content:space-between;
-                    align-items:center;padding:1rem 2rem;
-                    }
-                    
-                    nav ul{display:flex;gap:1.5rem;list-style:none}
-                    nav a{color:white;text-decoration:none;}
-                    
-                    .btn{
-                    background:#7c3aed;
-                    padding:10px 18px
-                    border-radius:8px;
-                    border:none;
-                    color:white;
-                    cursor:pointer;
-                    }
-                    
-                    .hero{
-                    height:100vh;
-                    background:url('hero.jpg') center/cover no-repeat;
-                    display:flex;align-items:center;justify-content:center;
-                    text-align:center;padding:2rem;
-                    }
-                    
-                    .hero h1{font-size:3rem;margin-bottom:1rem;}
-                    
-                    section{padding:80px 20px; max-width:1100px;margine:auto;}
-                    
-                    .grid{
-                    display:grid;
-                    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-                    gap:25px;
-                    }
-                    
-                    .card{
-                    background:#1a1a1a;
-                    padding:20px;border-radius:12px;
-                    }
-                    
-                    .section-title{text-align:center;margine-bottom:40px;font-size:2rem;}
-                    
-                    iframe{width:100%;height:400px;border:none:border-radius:12px;}
-                    
-                    footer{background:black;text-align:center;padding:30px;color:#aaa;}
-                    
-                    .admin-panel{
-                    position:fixed;
-                    right:20px;
-                    bottom:20px;
-                    background:#1a1a1a;
-                    padding:15px;
-                    border-radius:10px;
-                    display:none;
-                    width:300px;
-                    z-index:1500;
-                    }
-                    
-                    input, textarea{
-                    width:100%;
-                    margin-bottom:10px;
-                    padding:8px;
-                    border-radius:6px;
-                    border:none;
-                    }
-                    
-                    .admin-toggle{
-                    position:fixed;
-                    bottom:20px;
-                    left:20px;
-                    background:#7c3aed;
-                    padding:12px;
-                    border-radius:50%;
-                    cursor:pointer;
-                    z-index:1500;
-                    }
-                    
-                    #loginModal{
-                    position:fixed;
-                    top:0;left:0;
-                    width:100%;height:100%;
-                    background:rgba(0,0,0,0.9);
-                    display:none;
-                    justify-content:center;
-                    align-items:center;
-                    z-index:2000;
-                    }
-                    
-                    .login-box{
-                    background:#1a1a1a;
-                    padding:30px;
-                    border-radius:12px;
-                    width:300px;
-                    text-align:center;
-                    }
-                    
-                    @medal(max-width:768px){
-                    nav ul{display:none;}
-                    .hero h1{font-size:2rem;}
-                    }
-                    </style>
-    </head>
-    
-    <body>
-        
-        <header>
-            <nav>
-                <h2>New Calvery Baptist Church</h2>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#live">Watch</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                
-                <a href="https://my.simplegive.com/App/Giving/new3975162" target="_blank">
-                    <button class="btn">Give</button>
-                </a>
-                
-            </nav>
-        </header>
-        
-        <!-- HERO -->
-        <section class="hero">
-            <div>
-                <h1 id="heroTitle">Welcome Home</h1>
-                <p id="heroText">Matthew 28: 18-20 "Then Jesus came to them and said, All authority has been given to me. Therefore go and make discples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age."</p>
-            </div>
-        </section>
-        
-        <!-- ABOUT -->
-        <section id="about">
-            <h2 class="section-title">About Us</h2>
-            <p id="aboutText" style="text-align:center;max-width:700px;margin:auto;">
-            Edit this in admin panel.
-            </p>
-        </section>
-        
-        <!-- LIVESTREAM -->
-        <section id="live"
-            <h2 class="section-title">Watch Live</h2>
-            <iframe id="liveFrame"
-                src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID">
-            </iframe>
-            <p style="text-align:center;margin-top:10px;">Replace YOUR_CHANNEL_ID</p>
-        </section>
-        
-        <!-- EVENTS -->
-        <section id="events">
-            <h2 class="section-title">Events</h2>
-            <div class="grid" id="eventsContainer">
-                <h3>Sunday Worship</h3>
-                <p>10:30 AM</p>
-            </div>
-            </div>
-        </section>
-        
-        <!-- CONTACT -->
-        <section id="contact">
-            <h2 class="section-title">Contact</h2>
-            <p style="text-align:center;">Add your info</p>
-            <iframe src="https://maps.google.com/maps?q=Detroit&t=$z=13&output=embed"
-                </section>
-                
-                <footer>
-                    <p>© 2026 New Calvary Baptist Church</p>
-                </footer>
-                
-                <!-- ADMIN BUTTON -->
-                <div class="admin-toggle" onclick="openLogin()">⚙️</div>
-                
-                <!-- ADMIN PANEL -->
-                <div class="admin-panel" id="adminPanel">
-                    <h3>Admin Panel</h3>
-                    
-                    <input id="adminHeroTitle" placeholder="Hero Title"/>
-                    <textarea id="adminHeroText" placeholder="Hero Text"></textarea>
-                    <textarea id="adminAbout" placeholder="About Text"></textarea>
-                    
-                    <input id="adminEventTitle" placeholder="Event Title"/>
-                    <input id="adminEventTime" placeholder="Event Time"/>
-                    
-                    <button onclick="addEvent()" class="btn">Add Event</button>
-                    <button onclick="saveContent()" class="btn">Save</button>
-                    <button onclick="logout()" class="btn">Logout</button>
-                </div>
-                
-                <!-- LOGIN MODAL -->
-                <div id="loginModal">
-                    <div class="login-box">
-                        <h2>Admin Login</h2>
-                        <input id="username" placeholder="Username">
-                            <input id="password" type="passwork" placeholder="Password">
-                                <button onclick="login()" class="btn" style="wdith:100%;">Login</button>
-                                <p id="loginError" style="color:red;"></p>
-                    </div>
-                </div>
-                
-                <script>
-                    const ADMIIN_USERNAME = "admin";
-                    const ADMIN_PASSWORD = "church123";
-                    
-                    window.onload = function(){
-                        if(localStorage.loggedIn === "true"){
-                        }
-                        
-                        if(localStorage.heroTitle) {
-                            document.getElementbyID("heroTitle").innerText = localStorage.heroTitle;
-                            document.getElementbyID("heroText").innerText = localStorage.heroText;
-                            document.getElementbyID("aboutText").innerText = localStorage.aboutText;
-                            document.getElementbyID("eventsContainer").innerHTML = localStorage.events;
-                        }
-                    }
-                    
-                    function openLogin(){
-                        if(localStorage.logginIn === "true"){
-                            toggleAdmin();
-                        } else {
-                            document.getElementbyID("loginModal").style.display = "flex";
-                        }
-                    }
-                    
-                    function login(){
-                        let user = document.getElementByID("username").value;
-                        let pass = document.getElementbyID("password").value;
-                        
-                        if(user === ADMIN_USERNAME && pass === ADMIN_PASSWORD){
-                            localStorage.loggedIn = "true";
-                            document.getElementbyID("loginError").innerText = "Incorrect login";
-                        }
-                    }
-                    
-                    function logout(){
-                        localStorage.loggedIn = "false";
-                        document.getElementbyID("adminPanel").style.display = "none";
-                        alert("Logged out");
-                    }
-                    
-                    function toggleAdmin(){
-                        let panel = document.getElementByID("adminPanel");
-                        panel.style.display = panel.style.display === "none" ? "block" : "none";
-                    }
-                    
-                    function saveContent(){
-                        localStorage.heroTitle = document.getElementbyID("adminHeroTitle").value;
-                        localStorage.heroText = document.getElementbyID("adminHeroText").value;
-                        localStorage.aboutText = document.getElementbyID("adminAbout").value;
-                        localStorage.events = document.getElementbyID("eventsContainer").innerHTML;
-                        
-                        alert("Saved!");
-                        location.reload();
-                    }
-                    
-                    function addEvent(){
-                        let title = document.getElementbyID("adminEventTitle").value;
-                        let time = document.getElementbyID("adminEventTime").value;
-                        
-                        let html = '
-                        <div class="card">
-                        <h3>${title}</h3>
-                        <p>${time}</p>
-                        </div>
-                            ';
-                            
-                            document.getElementbyID("eventsContainer").innerHTML += html;
-                    }
-                </script>
-                
-            </body>
-    </html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Calvary Baptist Church</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#0f0f0f;color:#fff;}
+nav{display:flex;justify-content:space-between;align-items:center;background:#000;padding:1rem 2rem;position:sticky;top:0;z-index:1000;}
+nav ul{display:flex;gap:1.5rem;list-style:none;}
+nav a{color:white;text-decoration:none;}
+.dropdown{position:relative;}
+.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:#1a1a1a;padding:10px;border-radius:8px;}
+.dropdown:hover .dropdown-menu{display:block;}
+.btn{background:#7c3aed;padding:10px 18px;border-radius:8px;border:none;color:white;cursor:pointer;}
+section{padding:80px 20px;max-width:1000px;margin:auto;}
+h1{margin-bottom:20px;}
+.subpage{margin-top:20px;padding:20px;background:#1a1a1a;border-radius:10px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>New Calvary Baptist Church</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+
+<li class="dropdown">
+<a href="#">Visitors ▾</a>
+<ul class="dropdown-menu">
+<li><a href="#welcome">Welcome</a></li>
+<li><a href="#clergy">Our Clergy</a></li>
+<li><a href="#newmember">New Member</a></li>
+</ul>
+</li>
+
+<li class="dropdown">
+<a href="#">Church Auxiliaries ▾</a>
+<ul class="dropdown-menu">
+<li><a href="#education">Christian Education</a></li>
+<li><a href="#mission">Christian Mission</a></li>
+<li><a href="#family">Family Growth</a></li>
+<li><a href="#worship">Praise & Worship</a></li>
+</ul>
+</li>
+
+<li><a href="#giving">Giving</a></li>
+<li><a href="#vacancy">Pastoral Vacancy</a></li>
+</ul>
+</nav>
+
+<section id="home">
+<h1>Welcome Home</h1>
+<p>A place to grow, connect, and experience God.</p>
+</section>
+
+<section>
+<h1>Visitors</h1>
+
+<div id="welcome" class="subpage">
+<h2>Welcome</h2>
+<p>We are so glad you're here. Join us this Sunday!</p>
+</div>
+
+<div id="clergy" class="subpage">
+<h2>Our Clergy</h2>
+<p>Meet our leadership team.</p>
+</div>
+
+<div id="newmember" class="subpage">
+<h2>New Members</h2>
+<p>Learn how to join our church family.</p>
+</div>
+</section>
+
+<section>
+<h1>Church Auxiliaries</h1>
+
+<div id="education" class="subpage">
+<h2>Christian Education</h2>
+<p>Growing in faith through learning.</p>
+</div>
+
+<div id="mission" class="subpage">
+<h2>Christian Mission</h2>
+<p>Serving the community and beyond.</p>
+</div>
+
+<div id="family" class="subpage">
+<h2>Family Growth</h2>
+<p>Strengthening families in Christ.</p>
+</div>
+
+<div id="worship" class="subpage">
+<h2>Praise & Worship</h2>
+<p>Celebrating God through music and praise.</p>
+</div>
+</section>
+
+<section id="giving">
+<h1>Giving</h1>
+<p>Your generosity supports our ministry.</p>
+<a href="https://my.simplegive.com/App/Giving/new3975162" target="_blank">
+<button class="btn">Give Now</button>
+</a>
+</section>
+
+<section id="vacancy">
+<h1>Pastoral Vacancy</h1>
+<p>We are prayerfully seeking a new pastor.</p>
+<p>Email resumes to: church@email.com</p>
+</section>
+
+</body>
+</html>
